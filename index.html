@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+
+
+
+
+
+
+
+<div id="divdelogodeimagem"> 
+<img src="C:\Users\Samsung\Downloads\WhatsApp Image 2025-06-04 at 11.42.38.jpeg" width="180px" heigth="140px"> 
+</div>
+<div id="fundo"> 
+
+<div id="teladefundodelogin">
+<label for="nome" > Nome: </label>
+<input type="text" id="nome" class="box"></input>
+<label for="senha"> Senha: </label>
+<input  id="senha" class="box" type="password"></input>
+<label for="confirmarsenha"> Confirmar senha:</label>
+<input  id="confirmarsenha" class="box" type="password" ></input>
+<label for="endereco"> Endereço: </label>
+<input type="text" id="endereco" class="box"> </input>
+<label for="numero"> Número de telefone: </label>
+<input type="text" id="numero" class="box"></input>
+<label for="cpf"> Cpf:  </label>
+<input type="text" id="cpf" class="box"></input>
+<button id="botao" onclick="cadastro()"> avançar </button>
+
+</div>
+</div>
+<script> 
+
+function cadastro() {
+            let nome = document.getElementById("nome").value;
+            let senha = document.getElementById("senha").value;
+            let confirmar = document.getElementById("confirmarsenha").value;
+            let endereco = document.getElementById("endereco").value;
+            let numero = document.getElementById("numero").value;
+            let cpf = document.getElementById("cpf").value;
+
+            if (nome && senha && confirmar && endereco && numero && cpf  ) {
+                if (senha === confirmar) {
+                localStorage.setItem("nome", nome);
+                localStorage.setItem("senha", senha);
+                localStorage.setItem("endereco", endereco);
+                localStorage.setItem("numero", numero);
+                localStorage.setItem("cpf", cpf);
+                
+                alert("Cadastro realizado com sucesso!");
+                window.location.href = "login.html";
+                } else { 
+                    alert("As senhas não coincidem! Tente novamente.");
+            }
+        
+        } else {
+            alert("Preencha todos os campos!");
+            }
+        
+    
+
+}
+</script>
+
+
+    
+</body>
+</html>

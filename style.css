@@ -1,0 +1,67 @@
+#fundo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 160px;
+    background-color: #00FFFF;
+}
+
+
+
+
+
+
+
+
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #00FFFF;
+}
+
+
+
+
+
+
+#teladefundodelogin {
+    width: 320px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    border: 5px solid Royal Blue;
+    border-radius: 6px;
+}
+
+.box {
+    margin: 2px;
+    margin-top: 4px;
+    margin-left: 6px;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+
+
+#botao {
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    margin-top: 15px;
+    padding: 4px;
+    margin-left: 12px;
+}
+
+
+#botao:hover {
+    box-shadow: 0px 6px 15px rgba(92, 98, 116, 0.9);
+    transform: scale(1.05)
+}
+#divdelogodeimagem {
+    display: flex;
+    margin-left: 60px;
+    
+}
